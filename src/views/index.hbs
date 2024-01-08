@@ -1,1 +1,38 @@
-<h1>imagenes</h1>
+<div class="card">
+    <div class="card-header bg-dark"  >
+        <h3 class="card-title text-white">
+<i class="far fa-image"></i>upload
+        </h3>
+    </div>
+    <div class="card">
+    <div class="card-header bg-dark">
+        <h3 class="card-title text-white">
+            <i class="far fa-image"></i> Subir Imagen
+        </h3>
+    </div>
+    <div class="card-body">
+        <form action="/images" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="inputGroupFile" class="form-label">Selecciona tu imagen</label>
+                <div class="input-group">
+                    <input type="file" name="image" class="form-control" id="inputGroupFile" aria-describedby="inputGroupFileAddon" required>
+                    <button type="submit" class="btn btn-primary">Subir</button>
+                </div>
+            </div>
+        
+        <div class="form-group">
+            <input type="text"name="tittle" class="form-control" placeholder="titulo" required>
+        </div>
+        <div class="form-group">
+<textarea name="descripcion" id=""  rows="2" class="form-control" placeholder="descripcion para la imagen" required></textarea>
+        </div>
+    <div class="form-group">
+<button class="btn btn-success">
+    <i class="fa fa-upload"></i> sube tu imagen
+</button>
+    </div>
+        
+        </form>
+    </div>
+</div>
+</div>  
